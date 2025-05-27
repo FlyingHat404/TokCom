@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# hf-mirror for China users
+# hf-mirror for Chinese users
 
 import os
 os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
