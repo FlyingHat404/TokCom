@@ -1,10 +1,10 @@
 # Token Communication-Driven Multimodal Large Models in Resource-Constrained Multiuser Networks
 
-  The code implementation of our propose **token communication** paradigm for distributed multimodal large model deployment. By performing **cross-modal alignment** and **task-oriented fine-tuning**, out method enables efficient, task-oriented token transmission.
+  The code implementation of our propose token communication paradigm for distributed multimodal large model deployment. By performing cross-modal alignment and task-oriented fine-tuning, out method enables efficient, task-oriented token transmission.
 
-  Moreover, you can also simply view it as a fine-tuning implementation of a multimodal large model. We unify the visual, audio, and textual modality data into the same latent space and input it to the foundation model to perform an audio-visual question answering task. 
+  Moreover, **you can also simply view it as a fine-tuning implementation of a multimodal large model.** We unify the visual, audio, and textual modality data into the same latent space and input it to the foundation model to perform an audio-visual question answering task. 
 
-  The simple and straightforward implementation is suitable to be taken as a baseline :)
+  ⭐ **The simple and straightforward implementation is suitable to be taken as a baseline** :)
 
 
 ---
@@ -61,7 +61,6 @@ Models can be downloaded from HuggingFace or via `utils/hf-download.py`.
 ## 🚀 Training
 
 ### Cross-Modal Alignment  
-Run:
 ```bash
 python task_align.py
 ```
@@ -76,7 +75,6 @@ python task_align.py
     ![](imgs/013.png)
 
 ### Task-Oriented Fine-Tuning  
-Run:
 ```bash
 python task_avqa.py
 ```
@@ -112,5 +110,3 @@ Thanks to this excellent tutorial on building your own LLaVA model:
 👉 [Bilibili Video](https://space.bilibili.com/45156039/lists/3213902)
 
 ---
-
-Feel free to star ⭐ this repository and contribute back!
