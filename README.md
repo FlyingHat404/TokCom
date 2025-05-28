@@ -2,8 +2,6 @@
 
   The code implementation of our propose token communication paradigm for distributed multimodal large model deployment [(arXiv paper)](https://arxiv.org/abs/2505.07841). By performing cross-modal alignment and task-oriented fine-tuning, out method enables efficient, task-oriented token transmission.
 
-  Moreover, **you can also simply view it as a fine-tuning implementation of a multimodal large model.** We unify the visual, audio, and textual modality data into the same latent space and input it to the foundation model to perform an **audio-visual question answering (AVQA)** task. 
-
   ⭐ **The simple and straightforward implementation is suitable to be taken as a baseline :)**
 
 
