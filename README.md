@@ -11,7 +11,6 @@
 
 ## 📁 Dataset Preparation
 The entire training process consists of two stages: **cross-modal alignment** and **task-oriented fine-tuning**.
-
 For the cross-modal alignment stage, we employ the [VALOR-32K dataset](https://casia-iva-group.github.io/projects/VALOR/data.html).
 For the task-oriented fine-tuning stage, we use the [MUSIC-AVQA dataset](https://gewu-lab.github.io/MUSIC-AVQA/)
 
