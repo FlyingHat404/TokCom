@@ -16,6 +16,7 @@ For the cross-modal alignment stage, we employ the [VALOR-32K dataset](https://c
 For the task-oriented fine-tuning stage, we use the [MUSIC-AVQA dataset](https://gewu-lab.github.io/MUSIC-AVQA/)
 
 After downloading the raw data into the corresponding directory, please run ```utils/raw_video_preprocess.py``` to split each video into image frames and extract the associated audio.
+
 Using the VALOR dataset as an example, the folder structure of the processed data should be organized as follows:
 
 ```
