@@ -4,7 +4,7 @@
 
   Moreover, **you can also simply view it as a fine-tuning implementation of a multimodal large model.** We unify the visual, audio, and textual modality data into the same latent space and input it to the foundation model to perform an audio-visual question answering task. 
 
-  ⭐ **The simple and straightforward implementation is suitable to be taken as a baseline** :)
+  ⭐ **The simple and straightforward implementation is suitable to be taken as a baseline :)**
 
 
 ---
