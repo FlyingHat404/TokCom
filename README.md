@@ -16,7 +16,7 @@ The training process is divided into **two stages**:
 2. **Task-oriented fine-tuning**
 
 ### Stage 1: Cross-Modal Alignment  
-- Dataset: [VALOR-32K](#) (originally for audio-visual captioning)
+- Dataset: [VALOR-32K](https://casia-iva-group.github.io/projects/VALOR/data.html)
 - Preprocessing:
   - Run `utils/raw_video_preprocess.py` to:
     - Extract frames from video
