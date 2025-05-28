@@ -1,8 +1,11 @@
-# Token Communication-Driven Multimodal Large Model
+# Token Communication-Driven Multimodal Large Models in Resource-Constrained Multiuser Networks
 
-This repository provides the code implementation for our proposed **token communication paradigm** for distributed multimodal large model deployment. By performing cross-modal alignment and task-oriented fine-tuning, our method enables efficient, task-oriented token transmission.
+The code implementation of our propose **token communication** paradigm for distributed multimodal large model deployment. By performing **cross-modal alignment** and **task-oriented fine-tuning**, out method enables efficient, task-oriented token transmission.
 
-You can also view this as a fine-tuning baseline for multimodal large models. We unify visual, audio, and textual modalities into a shared latent space and input them into a foundation model for **audio-visual question answering (AVQA)**.
+Moreover, you can also simply view it as a fine-tuning implementation of a multimodal large model. We unify the visual, audio, and textual modality data into the same latent space and input it to the foundation model to perform an audio-visual question answering task. 
+
+The simple and straightforward implementation is suitable to be taken as a baseline :)
+
 
 ---
 
@@ -40,15 +43,16 @@ VALOR/
 ```
 
 ### Stage 2: Task-Oriented Fine-Tuning  
-- Dataset: [MUSIC-AVQA](#)
+- Dataset: [MUSIC-AVQA](https://gewu-lab.github.io/MUSIC-AVQA/)
 
 ---
 
 ## 🧠 Model Preparation
 
-- **Text**: [Qwen2.5-1.5B](#)
-- **Audio**: [AST (Audio Spectrogram Transformer)](#)
-- **Visual**: [ViViT (Video Vision Transformer)](#)
+- **Foundation model**: [Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+- **Text**: [Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+- **Audio**: [AST (Audio Spectrogram Transformer)](https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593)
+- **Visual**: [ViViT (Video Vision Transformer)](https://huggingface.co/google/vivit-b-16x2)
 
 Models can be downloaded from HuggingFace or via `utils/hf-download.py`.
 
@@ -61,7 +65,7 @@ Run:
 ```bash
 python task_align.py
 ```
-- Checkpoints will be saved in `checkpoint/xxx.pth` (create the folder beforehand).
+- Checkpoints will be saved in `checkpoint/xxx.pth` (create the folder beforehand). We also provide the Rounds vs. Loss and T-SNE pictures of different contrastive temperature for the alignment stage.
 - Visualization:
   - Temperature comparison  
     ![](imgs/Temp.png)
@@ -76,14 +80,11 @@ Run:
 ```bash
 python task_avqa.py
 ```
-- Unlike original AVQA implementations, our model **generates autoregressively** rather than using a classification head.
-- The output spans the entire vocabulary.
-- See `modules/foundation_model.py` for details.
+- It’s noteworthy that we evaluate the autoregressive generation capability of the foundation model rather than using a classification head as the origin implementation does [MUSIC-AVQA](https://github.com/GeWu-Lab/MUSIC-AVQA). Specifically, the output space of our model spans the entire vocabulary instead of a limited set of label indices.  See `modules/foundation_model.py` for details.
 
 ---
 
-## 💡 Notes for Beginners
-- Set breakpoints to inspect tensor shapes during each stage — it's a great way to understand the data flow.
+For beginners, it is recommended to set breakpoints to check the shape of tensors at each step of the process :)
 
 ---
 
@@ -92,7 +93,7 @@ python task_avqa.py
 If you find our work helpful, please consider citing:
 
 ```bibtex
-@misc{zhang2025tokencommunicationdrivenmultimodallarge,
+@misc{junhe2025tokcom,
   title={Token Communication-Driven Multimodal Large Models in Resource-Constrained Multiuser Networks},
   author={Junhe Zhang and Wanli Ni and Pengwei Wang and Dongyu Wang},
   year={2025},
