@@ -65,14 +65,18 @@ Models can be downloaded from HuggingFace or via `utils/hf-download.py`.
 python task_align.py
 ```
 - Checkpoints will be saved in `checkpoint/xxx.pth` (create the folder beforehand). We also provide the Rounds vs. Loss and T-SNE pictures of different contrastive temperature for the alignment stage.
-- Visualization:
-  - Temperature comparison  
-    ![](imgs/Temp.png)
-  - T-SNE plots at different contrastive temperatures  
-    ![](imgs/000.png)  
-    ![](imgs/003.png)  
-    ![](imgs/007.png)  
-    ![](imgs/013.png)
+#### Temperature Comparison
+<p align="center">
+  <img src="imgs/Temp.png" width="400"/>
+</p>
+
+#### t-SNE Plots at Different Contrastive Temperatures
+<p align="center">
+  <img src="imgs/000.png" width="200"/>
+  <img src="imgs/003.png" width="200"/>
+  <img src="imgs/007.png" width="200"/>
+  <img src="imgs/013.png" width="200"/>
+</p>
 
 ### Task-Oriented Fine-Tuning  
 ```bash
