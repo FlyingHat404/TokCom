@@ -70,7 +70,7 @@ python task_align.py
   <img src="imgs/Temp.png" width="400"/>
 </p>
 
-#### t-SNE Plots at Different Contrastive Temperatures τ
+#### t-SNE Plots with Different Contrastive Temperatures τ
 <p align="center">
   <img src="imgs/000.png" width="200"/>
   <img src="imgs/003.png" width="200"/>
