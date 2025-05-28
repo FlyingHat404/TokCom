@@ -1,10 +1,10 @@
 # Token Communication-Driven Multimodal Large Models in Resource-Constrained Multiuser Networks
 
-The code implementation of our propose **token communication** paradigm for distributed multimodal large model deployment. By performing **cross-modal alignment** and **task-oriented fine-tuning**, out method enables efficient, task-oriented token transmission.
+  The code implementation of our propose **token communication** paradigm for distributed multimodal large model deployment. By performing **cross-modal alignment** and **task-oriented fine-tuning**, out method enables efficient, task-oriented token transmission.
 
-Moreover, you can also simply view it as a fine-tuning implementation of a multimodal large model. We unify the visual, audio, and textual modality data into the same latent space and input it to the foundation model to perform an audio-visual question answering task. 
+  Moreover, you can also simply view it as a fine-tuning implementation of a multimodal large model. We unify the visual, audio, and textual modality data into the same latent space and input it to the foundation model to perform an audio-visual question answering task. 
 
-The simple and straightforward implementation is suitable to be taken as a baseline :)
+  The simple and straightforward implementation is suitable to be taken as a baseline :)
 
 
 ---
