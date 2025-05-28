@@ -1,4 +1,4 @@
-# Token Communications-Driven Multimodal Large Models in Resource-Constrained Multiuser Networks
+# Token Communication-Driven Multimodal Large Model
 
 This repository provides the code implementation for our proposed **token communication paradigm** for distributed multimodal large model deployment. By performing cross-modal alignment and task-oriented fine-tuning, our method enables efficient, task-oriented token transmission.
 
@@ -63,8 +63,13 @@ python task_align.py
 ```
 - Checkpoints will be saved in `checkpoint/xxx.pth` (create the folder beforehand).
 - Visualization:
-  - `Temp.png`: Temperature comparison
-  - `000.png`, `003.png`, `007.png`, `013.png`: T-SNE plots for different contrastive temperatures
+  - Temperature comparison  
+    ![](imgs/Temp.png)
+  - T-SNE plots at different contrastive temperatures  
+    ![](imgs/000.png)  
+    ![](imgs/003.png)  
+    ![](imgs/007.png)  
+    ![](imgs/013.png)
 
 ### Task-Oriented Fine-Tuning  
 Run:
