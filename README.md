@@ -70,13 +70,14 @@ python task_align.py
   <img src="imgs/Temp.png" width="400"/>
 </p>
 
-#### t-SNE Plots at Different Contrastive Temperatures
+#### t-SNE Plots at Different Contrastive Temperatures τ
 <p align="center">
   <img src="imgs/000.png" width="200"/>
   <img src="imgs/003.png" width="200"/>
   <img src="imgs/007.png" width="200"/>
   <img src="imgs/013.png" width="200"/>
 </p>
+From left to right: without alignment, τ = 0.03, τ = 0.07, τ = 0.13.
 
 ### Task-Oriented Fine-Tuning  
 ```bash
