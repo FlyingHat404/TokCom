@@ -77,7 +77,8 @@ From left to right: without alignment, τ = 0.03, τ = 0.07, τ = 0.13.
 ```bash
 python task_avqa.py
 ```
-- It’s noteworthy that we evaluate the autoregressive generation capability of the foundation model rather than using a classification head as the origin implementation does [MUSIC-AVQA](https://github.com/GeWu-Lab/MUSIC-AVQA). Specifically, the output space of our model spans the entire vocabulary instead of a limited set of label indices.  See `modules/foundation_model.py` for details.
+
+It’s noteworthy that we evaluate the autoregressive generation capability of the foundation model rather than using a classification head as the origin implementation does [MUSIC-AVQA](https://github.com/GeWu-Lab/MUSIC-AVQA). Specifically, the output space of our model spans the entire vocabulary instead of a limited set of label indices.  See `modules/foundation_model.py` for details.
 
 ---
 
