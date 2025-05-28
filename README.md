@@ -10,8 +10,8 @@
 ## 📁 Dataset Preparation
 The entire training process consists of two stages: **cross-modal alignment** and **task-oriented fine-tuning**.
 
-For the cross-modal alignment stage, we use the [VALOR-32K dataset](https://casia-iva-group.github.io/projects/VALOR/data.html).
-For the task-oriented fine-tuning stage, we use the [MUSIC-AVQA dataset](https://gewu-lab.github.io/MUSIC-AVQA/).
+For the cross-modal alignment stage, we use the [VALOR-32K](https://casia-iva-group.github.io/projects/VALOR/data.html) dataset.
+For the task-oriented fine-tuning stage, we use the [MUSIC-AVQA](https://gewu-lab.github.io/MUSIC-AVQA/) dataset.
 
 After downloading the raw data into the corresponding directory, please run ```utils/raw_video_preprocess.py``` to split each video into image frames and extract the associated audio.
 Using the VALOR dataset as an example, the folder structure of the processed data should be organized as follows:
