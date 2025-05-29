@@ -2,7 +2,7 @@
 
   The code implementation of our propose token communication paradigm for distributed multimodal large model deployment [(arXiv paper)](https://arxiv.org/abs/2505.07841). By performing cross-modal alignment and task-oriented fine-tuning, out method enables efficient, task-oriented token transmission.
 
-  ⭐ **The simple and straightforward implementation is suitable to be taken as a baseline :)**
+  <!-- ⭐ **The simple and straightforward implementation is suitable to be taken as a baseline :)** -->
 
 
 ---
